@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Gleb Golev](https://up.htmlacademy.ru/htmlcss/30/user/1292461).
-* Наставник: [Роман Кушнир] (https://htmlacademy.ru/profile/id485545).
+* Наставник: [Роман Кушнир](https://htmlacademy.ru/profile/id485545).
 
 ---
 
