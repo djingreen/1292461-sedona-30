@@ -1,0 +1,9 @@
+{
+  "icons": [
+    {"src": "img/favicon/favicon_512x512.png", "type": "image/png", "size": "512х512"},
+    {"src": "img/favicon/favicon_192x192.png", "type": "image/png", "size": "192х192"},
+    {"src": "img/favicon/favicon_152х152.png", "type": "image/png", "size": "152х152"},
+    {"src": "img/favicon/favicon_32х32.png", "type": "image/png", "size": "32х32"},
+    {"src": "img/favicon/favicon_16х16.png", "type": "image/png", "size": "16х16"}
+  ]
+}
