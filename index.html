@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Городок Седона</title>
@@ -7,16 +7,20 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="page-body">
 
-    <header>
-      <nav>
-        <a>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="img/logo/logo.svg" width="138" height="70" alt="Логотип Городок Седона">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -25,83 +29,86 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
 
-      <section>
+      <section class="features">
       <h1>Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин по которым Седона круче, чем Гранд каньон!</p>
         <h2>Приемущества</h2>
-        <ul>
-          <li>
+        <ul class="features-list">
+          <li class="feature-item-big">
             <h3>Настоящий городок</h3>
             <p>- №1 -</p>
             <p>Седона-не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="img/sedona.jpg" width="800" height="256" alt="Городок Седона">
             <ul>
-              <li>
+              <li class="feature-item">
                  <h3>Жилье</h3>
                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li>
+              <li class="feature-item">
                   <h3>Еда</h3>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
               </li>
-              <li>
+              <li class="feature-item">
                  <h3>Сувениры</h3>
                  <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
 
-          <li>
+          <li class="feature-item-big">
             <img src="img/davils_bridge.jpg" width="800" height="256" alt="Мост Дьявола">
             <h3>Там есть мост дьявола</h3>
             <p>- №2 -</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Небольшая площадь</h3>
             <p>- №3 -</p>
             <p>Все достопремечательности находятся очень близко</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Красивая дорога</h3>
             <p>- №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
+          <li class="feature-item">
             <h3>Мало туристов</h3>
             <p>- №5 -</p>
             <p>Большинство едет в град каньон и толпится там</p>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <!--здесь будет форма поиска гостиниц-->
       </section>
+      <div class="map">
+        <img src="img/map_sedona.png" width="1199" height="594" alt="карта Городка Седона">
+      </div>
     </main>
 
-    <footer>
-      <div>
+    <footer class="main-footer">
+      <div class="contacts">
         <h3>Контакты</h3>
         <p>#visitSEDONA</p>
-        <a href="tel:+7495660166">ТЕЛ: +7(495) 666-01-66</a>
+        <a class="contacts-phone" href="tel:+7495660166">ТЕЛ: +7(495) 666-01-66</a>
       </div>
-      <div>
+      <div class="footer-social">
         <h3>Социальные сети</h3>
         <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Youtube</a></li>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Youtube</a></li>
         </ul>
       </div>
       <div>
         <h3>Копирайт</h3>
         <p>
           website by
-          <a href="https://htmlacademy.ru/intensive/htmlcss" target="blank">html academy</a>
+          <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="blank">html academy</a>
         </p>
       </div>
     </footer>

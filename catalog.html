@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Каталог жилья городка Седона</title>
@@ -7,20 +7,24 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="page-body">
 
-    <header>
-      <nav>
+    <header class="main-header">
+      <nav class="main-navigation">
         <a href="index.html">
           <img src="img/logo/logo.svg" width="138" height="70" alt="Логотип Городок Седона">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li><a class="carent" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -94,8 +98,8 @@
                       </a>
                       <span>Гостиница</span>
                       <span>от 4 000 ₽.</span>
-                      <a href="#">Подробнее</a>
-                      <button type="button">Забронировать</button>
+                      <a class="button" href="#">Подробнее</a>
+                      <button class="button-catalog" type="button">Забронировать</button>
                       <p>рейтинг: 8,5 </p>
                     </article>
                   </li>
@@ -108,8 +112,8 @@
                       </a>
                       <span>Мотель</span>
                       <span>от 3 000 ₽.</span>
-                      <a href="#">Подробнее</a>
-                      <button type="button">Забронировать</button>
+                      <a class="button" href="#">Подробнее</a>
+                      <button class="button-catalog" type="button">Забронировать</button>
                       <p>рейтинг: 8,9 </p>
                     </article>
                   </li>
@@ -122,8 +126,8 @@
                       </a>
                       <span>Апартаменты</span>
                       <span>от 2 000 ₽.</span>
-                      <a href="#">Подробнее</a>
-                      <button type="button">Забронировать</button>
+                      <a class="button" href="#">Подробнее</a>
+                      <button class="button-catalog" type="button">Забронировать</button>
                       <p>рейтинг: 9,2 </p>
                     </article>
                   </li>
@@ -135,7 +139,7 @@
       <div>
         <h3>Контакты</h3>
           <p>#visitSEDONA</p>
-          <a href="tel:+7495660166">ТЕЛ: +7(495) 666-01-66</a>
+          <a class="contacts-phone" href="tel:+7495660166">ТЕЛ: +7(495) 666-01-66</a>
       </div>
       <div>
         <h3>Социальные сети</h3>
