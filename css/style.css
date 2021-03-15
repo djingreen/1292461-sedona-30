@@ -22,6 +22,7 @@
   --basic-black: #000000;
   --basic-light-black: #333333;
   --basic-white-black: #888888;
+;
   --basic-neutral: #EEEEEE;
   --basic-white: #ffffff;
   --basic-blue: #81B3D2;
@@ -34,6 +35,12 @@
   --special-logo: #766458;
   --special-active: #604E43;
   --special-focus: #503E33;
+
+  --special-logo-black: #231F20;
+  --special-logo-blue: #81B3D2;
+  --special-logo-white-black: #BDBBBC;
+
+
 }
 
 /* Global */
@@ -66,88 +73,83 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  font-size: 14px;
+  background-color: var(--basic-white);
+}
+
+/* Site navigation */
+
+.site-navigation {
   line-height: 26px;
   font-weight: bold;
   color: var(--basic-black);
-}
-
-.site-navigation {
-  background-color: var(--basic-white);
   list-style: none;
 }
-
-
-/* User navigation */
-
-
-.site-navigation a,
-.user-navigation a {
+.site-navigation a {
   color: var(--basic-black);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: var(--basic-white);
+.site-navigation a:hover {
+  color: var(--basic-blue);
 }
 
+.site-navigation a:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.site-navigation .current{
+  color: var(--special)
+}
 
 /* Features */
 
-.features p {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
+.features {
   color: var(--basic-black);
   list-style: none;
+  text-align: center;
+  line-height: 26px;
+}
+.features p {
+  font-style: normal;
+  font-weight: normal;
+
+}
+
+.features h1{
+  font-size: 21px;
+  font-style: normal;
+  font-weight: bold;
+
+
 }
 
 .features-list {
   list-style: none;
 }
 
-.features,
-.feature-item,
-.feature-item-big {
-  text-align: center;
-}
-.feature-item-big {
-  list-style: none;
-}
 
-.feature-item h3,
-.feature-item-big h3 {
+.feature-item h3, {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
 }
 
-.feature-item p,
-.feature-item-big p {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  }
 
-.feature-item-big,
 .feature-item {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  color: var(--basic-light-black);
+  background-color: var(--basic-white);
+  list-style: none;
+  text-align: center;
 }
- .feature-item-big,
- .feature-item-big p {
+ .box {
   color: var(--basic-white);
   background-color: var(--basic-blue);
  }
 
- .feature-item {
-   color: var(--basic-light-black);
-   background-color: var(--basic-white);
- }
 
 /* Button */
 
@@ -190,18 +192,25 @@ background-color: var(--basic-blue);
 .button-catalog:active {
   background-color: var(--special-active);
 }
-
 /* Contacts */
 
 .contacts-phone {
   color: inherit;
 }
 
+.contacts {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
 /* Main footer */
 
 .main-footer {
   color: var(--basic-black);
-  background-color: var(--basic-white);
+  background-color: rgba(255, 255, 255, 0.9);
+  align-items: center;
+  text-align: center;
 
 }
 
@@ -210,28 +219,40 @@ background-color: var(--basic-blue);
   text-decoration: underline;
 }
 
-.footer-contacts a:hover,
-.footer-contacts a:focus {
-  text-decoration: none;
+.footer-social li{
+  list-style: none;
 }
 
 /* Social button */
 
 .social-button {
   color: var(--basic-white);
+  background-color: var(--basic-blue);
 }
-
-.social-button:hover,
+.social-button:hover {
+  background-color: var(--basic-blue-focus);
+}
 .social-button:focus {
   background-color: var(--basic-blue);
 }
 
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+/* Copyright */
+
+.footer-copyright {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 26px;
 }
 
+.copyright-logo:hover {
+  color: var(--special-logo-black);
+}
+.copyright-logo:focus {
+  color: var(--special-logo-blue);
+}
+.copyright-logo:active {
+  color: var(--special-logo-white-black);
+}
 /* Modal */
 
 .modal {
@@ -246,5 +267,22 @@ background-color: var(--basic-blue);
 
 /* Map */
 .map {
+  text-align: center;
+}
 
+/* Search*/
+
+.search {
+  text-align: center;
+}
+
+.search h2 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.search p {
+  font-weight: normal;
+  line-height: 24px;
 }
